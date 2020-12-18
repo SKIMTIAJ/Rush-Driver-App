@@ -1,7 +1,9 @@
 package com.imtiaj.rush;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Adapter;
@@ -15,11 +17,22 @@ public class Driver_register extends AppCompatActivity implements AdapterView.On
 
     Spinner spinner;
     ArrayList<CustomItem> customList;
+    private ConstraintLayout constraintLayout;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_driver_register);
 
+
+        constraintLayout = findViewById(R.id.verify_text_wrapper);
+        constraintLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Driver_register.this,Document.class));
+            }
+        });
 
         spinner = findViewById(R.id.driver_Zone_spinner);
         customList = getCustomList();

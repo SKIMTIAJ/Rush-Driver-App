@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/NoActionBar">
-        <activity android:name=".Driver_register"></activity>
+        <activity android:name=".Document"></activity>
+        <activity android:name=".TermAndCondition" />
+        <activity android:name=".Driver_register" />
         <activity android:name=".Repeat_verification" />
         <activity android:name=".Otp_verify" />
         <activity android:name=".MainActivity">
