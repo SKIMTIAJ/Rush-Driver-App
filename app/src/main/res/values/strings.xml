@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Rush</string>
+
+    <string-array name="planets_array">
+        <item>+961</item>
+        <item>+962</item>
+        <item>+963</item>
+        <item>+964</item>
+        <item>+965</item>
+        <item>+966</item>
+        <item>+967</item>
+        <item>+968</item>
+    </string-array>
+</resources>
