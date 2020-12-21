@@ -11,4 +11,14 @@
         <item>+967</item>
         <item>+968</item>
     </string-array>
+
+    <string name="Driver_Reg_FirstName"><font size="18">First Name</font></string>
+    <string name="Driver_Reg_LastName"><font size="18">Last Name</font></string>
+    <string name="Driver_Reg_Email"><font size="18">Email Address</font></string>
+
+
+    <string name="Driver_Image_Document"><font size="18">Driver\'s Image *</font></string>
+    <string name="Driver_Licence_Document"><font size="18">Driver\'s Licence *</font></string>
+    <string name="Moto_Permit_Document"><font size="18">Driver\'s Moto Permit *</font></string>
+    <string name="Personal_Id_Document"><font size="18">Personal ID*</font></string>
 </resources>
