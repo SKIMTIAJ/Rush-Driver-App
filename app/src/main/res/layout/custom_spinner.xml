@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="@+id/spinner_text" />
 
     <TextView
-        android:id="@+id/spinner_text"
+        android:id="@+id/spinnerText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"

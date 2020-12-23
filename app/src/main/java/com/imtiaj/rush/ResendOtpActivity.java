@@ -7,7 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Repeat_verification extends AppCompatActivity {
+public class ResendOtpActivity extends AppCompatActivity {
 
     private ConstraintLayout constraintLayout;
     @Override
@@ -18,7 +18,7 @@ public class Repeat_verification extends AppCompatActivity {
         constraintLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Repeat_verification.this,Driver_register.class));
+                startActivity(new Intent(ResendOtpActivity.this, DriverRegisterActivity.class));
             }
         });
     }

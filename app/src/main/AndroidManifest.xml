@@ -9,11 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/NoActionBar">
-        <activity android:name=".Document"></activity>
+        <activity android:name=".MyProfileActivity">
+        </activity>
+        <activity android:name=".DocumentActivity" />
         <activity android:name=".TermAndCondition" />
-        <activity android:name=".Driver_register" />
-        <activity android:name=".Repeat_verification" />
-        <activity android:name=".Otp_verify" />
+        <activity android:name=".DriverRegisterActivity" />
+        <activity android:name=".ResendOtpActivity" />
+        <activity android:name=".OtpverifyActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

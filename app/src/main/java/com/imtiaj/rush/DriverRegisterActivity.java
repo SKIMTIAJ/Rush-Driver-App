@@ -6,14 +6,13 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class Driver_register extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class DriverRegisterActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     Spinner spinner;
     ArrayList<CustomItem> customList;
@@ -26,15 +25,15 @@ public class Driver_register extends AppCompatActivity implements AdapterView.On
         setContentView(R.layout.activity_driver_register);
 
 
-        constraintLayout = findViewById(R.id.verify_text_wrapper);
+        constraintLayout = findViewById(R.id.verifyTextWrapper);
         constraintLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Driver_register.this,Document.class));
+                startActivity(new Intent(DriverRegisterActivity.this, DocumentActivity.class));
             }
         });
 
-        spinner = findViewById(R.id.driver_Zone_spinner);
+        spinner = findViewById(R.id.driverZoneSpinner);
         customList = getCustomList();
         CustomAdapter adapter = new CustomAdapter(this,customList);
        if (spinner!=null){

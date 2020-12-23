@@ -12,23 +12,22 @@ import java.util.ArrayList;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-public class CustomAdapter extends ArrayAdapter<CustomItem> {
+public class MainactivityAdapter extends ArrayAdapter<CustomItem> {
 
 
-
-    public CustomAdapter(@NonNull Context context, ArrayList<CustomItem> cuustomList) {
-        super(context, 0, cuustomList);
+    public MainactivityAdapter(@NonNull Context context, @NonNull ArrayList<CustomItem> objects) {
+        super(context, 0, objects);
     }
 
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         if (convertView==null){
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.custom_spinner,parent,false);
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.mainactivity_spinner,parent,false);
         }
         CustomItem item = getItem(position);
         if(item!=null){
-            TextView spinnerText = convertView.findViewById(R.id.spinnerText);
+            TextView spinnerText = convertView.findViewById(R.id.spinner_text);
             spinnerText.setText(item.getDropdownzone());
         }
         return convertView;
@@ -38,11 +37,11 @@ public class CustomAdapter extends ArrayAdapter<CustomItem> {
     @Override
     public View getDropDownView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         if (convertView==null){
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.custom_dropdown,parent,false);
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.mainactivity_dropdown_item,parent,false);
         }
         CustomItem item = getItem(position);
         if(item!=null){
-            TextView spinnerText = convertView.findViewById(R.id.spinnerText);
+            TextView spinnerText = convertView.findViewById(R.id.spinner_text);
             spinnerText.setText(item.getDropdownzone());
         }
         return convertView;
